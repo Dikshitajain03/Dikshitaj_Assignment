@@ -1,0 +1,585 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "ab60b52f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12\n",
+      "sum= 78\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.1 Write a python program to sum of the first n positive integers.\n",
+    "a= int(input())\n",
+    "b=0\n",
+    "for i in range(1,a+1):\n",
+    "    b+= i\n",
+    "print('sum=', b) "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "95abb980",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Q.2 Write a python program to count occurences of a substring in a string.\n",
+    "c='statistics is the science of collecting, organizing and analyzing data.'\n",
+    "c.count('is')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "0336cc88",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter my hobby=reading\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Q.3 Write a python program to count the occurences of each word in a given sentence.\n",
+    "str1= input('enter my hobby=')\n",
+    "str2= str1.split()\n",
+    "len(str2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "a88878a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "diin\n",
+      "dikshita\n",
+      "diin dikshita\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.4 Write a python program to get a single string from two given strings, separated by a space and swap the first two characters of each string.\n",
+    "name1 = 'dikshita'\n",
+    "name2 = 'jain'\n",
+    "k = name1[0:2] + name2[2:]\n",
+    "print(k)\n",
+    "name3 = k[0:2] + name1[2:]\n",
+    "print(name3)\n",
+    "name4 = k + ' ' + name3\n",
+    "print(name4)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "05c99334",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "baking\n",
+      "bakly\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.5 Write a python program to add 'ing' at the end of a given string(length should be atleast 3). If given string already ends with 'ing' then add 'ly' instead if the string length of a given string is less than 3, leave it unchanged.\n",
+    "str10= input()\n",
+    "if len(str10)>= 3:\n",
+    "    if str10.endswith('ing'):\n",
+    "        print(str10.replace('ing' , 'ly'))\n",
+    "    else:\n",
+    "        print(str10 + 'ing')\n",
+    "else:\n",
+    "    print(str10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "520623e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n",
+      "9\n",
+      "I am good human being\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.6 Write a python program to fing the first appreance of the substring 'not' and 'poor' from a given string, if 'not' follows the 'poor' , replace the whole 'not'...'poor' substring with 'good'. Return the resulting string.\n",
+    "str11= 'I am not poor human being'\n",
+    "str13= str11.find('not')\n",
+    "print(str13)\n",
+    "str14= str11.find('poor')\n",
+    "print(str14)\n",
+    "str15= str11.replace('not poor' , 'good')\n",
+    "print(str15)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "635e1e56",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "GCD of 50 and 60 is 10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.7 Program to find Greatest Common Divisor of two numbers.\n",
+    "# For example, the GCD of 20 and 28 is 4 and GCD of 98 and 56 is 14.\n",
+    "num1=50\n",
+    "num2=60\n",
+    "str19= num1\n",
+    "str20= num2\n",
+    "while num1 != num2:\n",
+    "    if num1 > num2:\n",
+    "        num1 -= num2\n",
+    "    else:\n",
+    "        num2 -= num1\n",
+    "print('GCD of',str19,'and',str20, 'is',num1)              "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "5fc56e67",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "list is present\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.8 Write a python program to check whether a list contains a sublist.\n",
+    "list1=[[21,22,23], [31,32,33], [41,42,43], [51,52,53]]\n",
+    "sublist=[31,32,33]\n",
+    "if sublist in list1:\n",
+    "    print('list is present')\n",
+    "else:\n",
+    "    print('list is not present')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "c6efa82d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "second smallest number= 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.9 Write a python program to find the second smallest number in a list.\n",
+    "list2=[1,2,3,4,5,6,7,8]\n",
+    "list2.sort()\n",
+    "str21= list2[1]\n",
+    "print('second smallest number=', str21)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "40518cac",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 67, 43, 20, 54, 23, 31]"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Q.10 Write a python program to get unique values from a list.\n",
+    "list11=[20,31,54,23,67,43,2,20,20,23,54]\n",
+    "l21=set(list11)\n",
+    "list(l21)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "1a8b014d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[(11, 12, 13), (21, 22, 23), (31, 32, 33)]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.11 Write a python program to unzip a list of tuples into individual lists.\n",
+    "l31= [(11,21,31), (12,22,32), (13,23,33)]\n",
+    "print(list(zip(*l31)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "03bd93d7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'lion': 'tiger', 51: 52}"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Q.12 Write a python program to convert a list of tuples into a dictionary.\n",
+    "dict1=[('lion', 'tiger'), (51,52)]\n",
+    "dict(dict1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "c5fbfca2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "descending= {44: 33, 31: 22, 21: 22, 12: 13}\n",
+      "ascending= {12: 13, 21: 22, 31: 22, 44: 33}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.13 Write a python program to sort a dictionary(ascending/descending)by value.\n",
+    "dict2= {12:13, 21:22, 31:22, 44:33}\n",
+    "dict3=dict4=list(dict2.items())\n",
+    "dict4.sort(reverse=True)\n",
+    "print('descending=' , dict(dict4))\n",
+    "dict3.sort()\n",
+    "print('ascending=' , dict(dict3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "6f023508",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Dictionary with 3 Highest Values\n",
+      "Keys : Values\n",
+      "[100, 54, 34]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.14 Write a python program to find the highest 3 values in a dictionary.\n",
+    "l31= {'P': 12, 'Q': 34 , 'R': 54 , 'S': 100}\n",
+    "print('Dictionary with 3 Highest Values')\n",
+    "print('Keys : Values')\n",
+    "l32= list(l31.values())\n",
+    "l32.sort(reverse=True)\n",
+    "l32.pop()\n",
+    "print(l32)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "ebe9e378",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "0 1 1 2 3 5 8 13 21 34 "
+     ]
+    }
+   ],
+   "source": [
+    "#Q.15 Given a number n, write a python program to make and print the list of Fibonacci series up to n.\n",
+    "# Input: n=7\n",
+    "#Hint: first 7 numbers in the series.\n",
+    "# Expected output:\n",
+    "# first few fibonacci numbers are 0,1,1,2,3,5,8,13\n",
+    "fib=int(input())\n",
+    "fib1= 0\n",
+    "fib2= 1\n",
+    "for i in range(fib):\n",
+    "    print(fib1, end= ' ')\n",
+    "    fib1,fib2 = fib2,fib1+fib2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "9e871f77",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1: 5, 5: 2, 3: 3, 4: 3, 2: 4}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.16 Counting the frequencies in a list using a dictionary in pyhton.\n",
+    "#Input : [1,1,1,5,5,3,1,3,3,1,4,4,4,2,2,2,2]\n",
+    "#Expected output: 1:5, 2:4, 3:3, 4:3, 5:2\n",
+    "list31=[1,1,1,5,5,3,1,3,3,1,4,4,4,2,2,2,2]\n",
+    "dict51={}\n",
+    "for i in list31:\n",
+    "    if i in dict51:\n",
+    "        dict51[i] += 1\n",
+    "    else:\n",
+    "        dict51[i]= 1\n",
+    "print(dict51)        \n",
+    "        \n",
+    "        \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "4ccc69a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "40320"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Q.18 Python program to find factorial of number using recursion.\n",
+    "def fun1(o):\n",
+    "    if o==1:\n",
+    "        return 1\n",
+    "    else: \n",
+    "        return o*fun1(o-1)\n",
+    "fun1(8)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "2517b277",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Q.19 Write a python function that takes a list and returns a new list with unique elememts of the first list.\n",
+    "def unique_list(list61):\n",
+    "    list62 = []\n",
+    "    for L in list61:\n",
+    "        if L not in list62:\n",
+    "            list62.append(L)\n",
+    "        return list62\n",
+    "print(unique_list([1,2,3,3,3,3,4,5]))    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d020b85c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Mini project :\n",
+    "#Problem Statement : Password Generator\n",
+    "#Make a program to generate a strong password using the input given by the user. To generate a password,\n",
+    "#randomly take some words from the user input and then include numbers, special characters and capital\n",
+    "#letters to generate the password. Also, keep a check that password length is more than 8 characters.\n",
+    "#Note: Include Exception handling wherever required. Also, make a ‘User’ class and store the details like user\n",
+    "#id, name and password of each user as a tuple. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "40bdf9dd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import random\n",
+    "def password_genrator(w1, w2, w3):\n",
+    "    u_c = 'QWERTYUIOPASDFGHJKLZXCVBNM'\n",
+    "    n_c = '1234567890'\n",
+    "    s_c = '!@#$%^&*'\n",
+    "    final_pass = ''\n",
+    "    final_pass += w1 + w2 + w3 \n",
+    "    l1 = random.choices(u_c, k = 3) + random.choices(n_c, k = 3) + random.choices(s_c, k = 3)\n",
+    "    l1 += list(final_pass)\n",
+    "    random.shuffle(l1)\n",
+    "    password = ''.join(l1)\n",
+    "    return password\n",
+    "\n",
+    "\n",
+    "class User:\n",
+    "    def __init__(self, a, b, c):\n",
+    "        self.name = a\n",
+    "        self.id = b\n",
+    "        self.password = c"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "a3d93c61",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "banana\n",
+      "apple\n",
+      "orange\n"
+     ]
+    }
+   ],
+   "source": [
+    "u1 = User('mrutika', 2, password_genrator(input(), input(), input()))\n",
+    "t1 = (u1.id, u1.name, u1.password)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "3e261058",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 'mrutika', 'pnea%eJra0opag6GYa^5anlnb*')"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4fe58e33",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
